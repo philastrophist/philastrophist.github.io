@@ -1,4 +1,9 @@
-summary: "PhD student"
+summary: |
+  I am a PhD student of 3.5 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+  My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
+  I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
+  My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploition of the 
+  next generation of surveys.
 
 unpublished: 
   - title: Highly Efficient Photometric Reverberation Mapping at High Redshift
@@ -17,15 +22,14 @@ unpublished:
               "Farrah, D.", "Gurkan, G.", "Hardcastle, M.J.", "McCheyne, I.", "Prandoni, I.", "Read, S.C.", "Röttgering, H.J.A.",
               "Sabater, J.", "Shimwell, T. W.", "Smith, D.J.B.", "Williams, W.L."]
 
+  - title: Galaxy Morphological Classification in Deep-Wide Surveys via Unsupervised Machine Learning
+    pub: in prep.
+    authors: ['Martin, G.', 'Kaviraj, S.', 'Hocking, A.', 'Read, S.C.', 'Geach, J.']
+    year: 2019
 
   - title: Bias and Accretion Rate Dependency in the Reverberation-Mapped Lag-luminosity Relation
     pub: in prep.
     authors: ['Read, S.C.', 'Smith, D. J. B.', 'et al.']
-    year: 2019
-
-  - title: Galaxy Morphological Classification in Deep-Wide Surveys via Unsupervised Machine Learning
-    pub: in prep.
-    authors: ['Martin, G.', 'Kaviraj, S.', 'Hocking, A.', 'Read, S.C.', 'Geach, J.']
     year: 2019
 
   - title: Brown dwarfs with Gaia

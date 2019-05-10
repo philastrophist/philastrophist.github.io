@@ -12,7 +12,12 @@ redirect_from:
 Download cv [here](/latex/cv-shauncread.pdf)
 
 ## Summary
- PhD student
+ I am a PhD student of 3.5 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
+I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
+My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploition of the 
+next generation of surveys.
+
 
 
  *Fellow of the Royal Astronomical Society, FRAS*
@@ -104,19 +109,19 @@ Expected completion: 2019
   
   
 ## Submitted and in preparation
-* *Highly Efficient Photometric Reverberation Mapping at High Redshift*, Read, S.C. Smith, D. J. B. Jarvis, M. J. Gürkan, G. - submitted to MNRAS
+* *Highly Efficient Photometric Reverberation Mapping at High Redshift*, **Read, S.C.**; Smith, D. J. B.; Jarvis, M. J.; Gürkan, G. - submitted to MNRAS
 * *On the Causes of the Mass Dependency of the Star-formation Rate -- Radio
-Luminosity Relation with LOFAR, Horizon-AGN, and CANDID*, Read, S.C. Smith, D. J. B. Gürkan, G. Hardcastle, M. J. et al. - in prep.
+Luminosity Relation with LOFAR, Horizon-AGN, and CANDID*, **Read, S.C.**; Smith, D. J. B.; Gürkan, G.; Hardcastle, M. J.; et al. - in prep.
 * *A LOFAR-IRAS cross-match study: the far-infrared radio correlation and
-the 150 MHz luminosity as a star-formation rate tracer*, Wang, L. Rowan-Robinson, M. Gao, F. Bonato, M. Calistro-Rivera, G.
-Chyży, K.T. Duncan, K.J. Farrah, D. Gurkan, G. Hardcastle, M.J.
-McCheyne, I. Prandoni, I. Read, S.C. Röttgering, H.J.A. Sabater, J.
-Shimwell, T. W. Smith, D.J.B. Williams, W.L. - in prep.
-* *Bias and Accretion Rate Dependency in the Reverberation-Mapped
-Lag-luminosity Relation*, Read, S.C. Smith, D. J. B. et al. - in prep.
+the 150 MHz luminosity as a star-formation rate tracer*, Wang, L.; Rowan-Robinson, M.; Gao, F.; Bonato, M.; Calistro-Rivera, G.;
+Chyży, K.T.; Duncan, K.J.; Farrah, D.; Gurkan, G.; Hardcastle, M.J.;
+McCheyne, I.; Prandoni, I.; **Read, S.C.**; Röttgering, H.J.A.; Sabater,
+J.; Shimwell, T. W.; Smith, D.J.B.; Williams, W.L. - in prep.
 * *Galaxy Morphological Classification in Deep-Wide Surveys via
-Unsupervised Machine Learning*, Martin, G. Kaviraj, S. Hocking, A. Read, S.C. Geach, J. - in prep.
-* *Brown dwarfs with Gaia*, Gonzalez, E. Pinfield, D. Read, S.C. et al. - in prep.
+Unsupervised Machine Learning*, Martin, G.; Kaviraj, S.; Hocking, A.; **Read, S.C.**; Geach, J. - in prep.
+* *Bias and Accretion Rate Dependency in the Reverberation-Mapped
+Lag-luminosity Relation*, **Read, S.C.**; Smith, D. J. B.; et al. - in prep.
+* *Brown dwarfs with Gaia*, Gonzalez, E.; Pinfield, D.; **Read, S.C.**; et al. - in prep.
 
 
 ## Presentations

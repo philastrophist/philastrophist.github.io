@@ -88,7 +88,11 @@ def clean_date(paper):
     return paper.pubdate.replace('00', '01')
 
 def clean_authors(paper, start='**', end='**'):
-    return '; '.join(['{}{}{}'.format(start, i, end) if 'Read, S' in i else i for i in paper.author])
+    try:
+        authors = paper.author
+    except AttributeError:
+        authors = paper['authors']
+    return '; '.join(['{}{}{}'.format(start, i, end) if 'Read, S' in i else i for i in authors])
 
 
 if __name__ == '__main__':
@@ -126,6 +130,9 @@ if __name__ == '__main__':
             published.append(d)
     print(len(published), 'published papers found on ADS')
     info['published'] = published
+    
+    for entry in info['unpublished']:
+        entry['authors'] = clean_authors(entry)
 
     print('parsing cv...')
     new_latex_cv = parse(latex_cv_template, info, 'latex')
