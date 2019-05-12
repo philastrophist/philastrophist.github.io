@@ -81,7 +81,7 @@ format suitable for client business strategies.
 
 **Summer Student**  
 *National Physical Laboratory, UK*, Jun 2013 - Aug 2013  
-**Supervisor**: Dr Alastair Sinclair  
+Supervisor: Dr Alastair Sinclair  
   
 -   Worked with the Time & Frequency Team.
 -   Analysed Gaussian beam quality for the strontium ion optical clock
