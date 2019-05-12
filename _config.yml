@@ -86,9 +86,11 @@ author:
   location         : "University of Hertfordshire, UK"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "vKH_26AAAAAJ"
+  arxiv            : "read_s_1"
+  ads              : "dSwakrv7TC-efLdGVlALtg"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "Shaun_Read"
   uri              :
   bitbucket        :
   codepen          :
@@ -102,7 +104,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "shaunread"
   orcid            : "https://orcid.org/0000-0001-9188-9359"
   pinterest        :
   soundcloud       :
@@ -115,6 +117,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  zotero           : "lucidnonsense"
 
 
 # Reading Files
