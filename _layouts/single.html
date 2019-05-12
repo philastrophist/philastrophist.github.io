@@ -34,6 +34,7 @@ layout: default
               <div style="float:right" data-badge-popover="top" data-badge-type="donut" data-arxiv-id="{{ page.arxiv }}" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
           {% endif %}
             <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+          {% if page.github %}<p><small><i class="fab fa-github fa-1x"></i><a href="https://github.com/{{ page.github }}"> {{ page.github }}</a></small></p>{% endif %}
           </div>
           {% endif %}
           {% if page.read_time %}
@@ -51,6 +52,8 @@ layout: default
             <i> | Open access with <a href="https://arxiv.org/abs/{{ page.arxiv }}">ArXiv</a></i>
           </p>
           {% endif %} 
+        {% elsif page.collection == 'projects' %}
+
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
@@ -61,7 +64,6 @@ layout: default
         {% elsif page.citation %}
           <p>Recommended citation: {{ page.citation }} </p>
         {% endif %}
-    
         </header>
       {% endunless %}
 
