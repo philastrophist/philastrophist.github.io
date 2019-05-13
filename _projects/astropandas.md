@@ -4,4 +4,4 @@ excerpt: "I really dislike astropy.Table"
 github: philastrophist/AstroPandas
 collection: projects
 ---
-One of my early first projects to easily go from astropy to pandas.
+A simple class that allows you to easily go from astropy to pandas.
