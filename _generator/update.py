@@ -139,7 +139,7 @@ if __name__ == '__main__':
     new_markdown_cv = parse(markdown_cv_template, info, 'md')
 
     print('updating cv...')
-    with open('latex/cv-shauncread.tex', 'w') as f:
+    with open('_latex/cv-shauncread.tex', 'w') as f:
         f.write(new_latex_cv)
 
     with open('_pages/cv.md', 'w') as f:
