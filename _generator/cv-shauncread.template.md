@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Download cv [here](/latex/cv-shauncread.pdf)
+Download cv [here](/cv.pdf)
 
 ## Summary
 %FORMAT[summary][FILL] %%\n
