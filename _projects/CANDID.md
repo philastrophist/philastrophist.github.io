@@ -18,9 +18,7 @@ CANDID deals with the following issues, many of which have known solutions, just
     distribution. Moreover, the size of the uncertainty distribution
     frequently changes across the parameter space. In the fitting of
     simple models, heteroscedasticity is incorporated naturally with the
-    addition of a $$\chi^2$$-like term into the likelihood. currently
-    incorporates unequal uncertainties easily by bootstrapping the
-    models with resampled measurements.
+    addition of a $$\chi^2$$-like term into the likelihood. Extreme Deconvolution handles heteroscedasticity.
 
 2.  **Non-Gaussianity**
 
