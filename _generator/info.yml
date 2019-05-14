@@ -8,15 +8,15 @@ summary: |
 unpublished: 
   - title: Highly Efficient Photometric Reverberation Mapping at High Redshift
     pub: 'submitted to MNRAS'
-    authors: ['Read, S.C.', 'Smith, D. J. B.', 'Jarvis, M. J.', 'Gürkan, G.']
+    authors: ['Read, S.C.', 'Smith, D.J.B.', 'Jarvis, M.J.', 'Gürkan, G.']
     year: 2019
 
   - title: On the Causes of the Mass Dependency of the Star-formation Rate -- Radio Luminosity Relation with LOFAR, Horizon-AGN, and CANDID
     pub: in prep.
-    authors: ['Read, S.C.', 'Smith, D. J. B.', 'Gürkan, G.', 'Hardcastle, M. J.', 'et al.']
+    authors: ['Read, S.C.', 'Smith, D.J.B.', 'Gürkan, G.', 'Hardcastle, M.J.', 'et al.']
     year: 2019
 
-  - title: "A LOFAR-IRAS cross-match study: the far-infrared radio correlation and the 150 MHz luminosity as a star-formation rate tracer"
+  - title: "A LOFAR-IRAS Cross-match Study: The Far-infrared Radio Correlation and the 150 MHz Luminosity as a Star-formation Rate Tracer"
     pub: in prep.
     authors: ["Wang, L.", "Rowan-Robinson, M.", "Gao, F.", "Bonato, M.", "Calistro-Rivera, G.", "Chyży, K.T.", "Duncan, K.J.", 
               "Farrah, D.", "Gurkan, G.", "Hardcastle, M.J.", "McCheyne, I.", "Prandoni, I.", "Read, S.C.", "Röttgering, H.J.A.",
@@ -29,12 +29,12 @@ unpublished:
 
   - title: Bias and Accretion Rate Dependency in the Reverberation-Mapped Lag-luminosity Relation
     pub: in prep.
-    authors: ['Read, S.C.', 'Smith, D. J. B.', 'et al.']
+    authors: ['Read, S.C.', 'Smith, D.J.B.', 'et al.']
     year: 2019
 
-  - title: Brown dwarfs with Gaia
+  - title: Low Mass Stars and Multiple Systems in Gaia
     pub: in prep.
-    authors: ['Gonzalez, E.', 'Pinfield, D.', 'Read, S.C.', 'et al.']
+    authors: ['González-Egea, E.', 'Pinfield, D.', 'Read, S.C.', 'et al.']
     year: 2019
 
 
