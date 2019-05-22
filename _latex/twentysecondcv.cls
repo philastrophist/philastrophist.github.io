@@ -3,18 +3,17 @@
 \NeedsTeXFormat{LaTeX2e}
 
 %----------------------------------------------------------------------------------------
-%	 REQUIRED PACKAGES
-%-----------------------------------------------------------------------	-----------------
+%  REQUIRED PACKAGES
+%-----------------------------------------------------------------------  -----------------
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[sfdefault]{ClearSans}
 
 \def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
 
-% \usepackage{pstricks}
+\usepackage{pstricks}
 
 \usepackage{fontawesome}
-% \newfontfamily\fatest{fonts/FontAwesome.otf}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
 \RequirePackage[absolute,overlay]{textpos}
@@ -57,7 +56,7 @@
 \fi
 
 %----------------------------------------------------------------------------------------
-%	 COLOURS
+%  COLOURS
 %----------------------------------------------------------------------------------------
 
 \definecolor{white}{RGB}{255,255,255}
@@ -108,7 +107,7 @@
 \colorlet{headercolor}{gray}
 
 %----------------------------------------------------------------------------------------
-%	 MISC CONFIGURATIONS
+%  MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 % \renewcommand{\bfseries}{\color{black}} % Make \textbf produce coloured text instead
@@ -118,12 +117,12 @@
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
 % --------------------------------------------------------------------------------------
-% 	FONTS
+%   FONTS
 %-------------------------------------------------------------------------------------
 \newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf}
 
 %----------------------------------------------------------------------------------------
-%	 SIDEBAR DEFINITIONS
+%  SIDEBAR DEFINITIONS
 %----------------------------------------------------------------------------------------
 
 \setlength{\TPHorizModule}{1cm} % Left margin
@@ -153,28 +152,31 @@
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
 
 % Command for printing skill progress bars
-\newcommand\programming[1]{ 
-	\renewcommand{\programming}{
-		\begin{tikzpicture}
-        % 	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
-			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\node [above right] at (0,\i+0.35) {\x};
-			}
-		\end{tikzpicture}
-	}
+\newcommand\programming[3]{ 
+  \renewcommand{\programming}{
+    % \begin{tikzpicture}
+    %       \node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+    %   \foreach [count=\i] \x/\y in {#1}{
+    %     \draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+    %     \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+    %     \node [above right] at (0,\i+0.35) {\x};
+    %   }
+    % \end{tikzpicture}
+    \textbf{Expert:}\\ #1\\
+    \textbf{Experienced:}\\ #2\\
+    \textbf{Competent:}\\ #3
+  }
 }
 \newcommand\education[1]{ 
-	\renewcommand{\education}{
-		{#1}
-	}
+  \renewcommand{\education}{
+    {#1}
+  }
 }
 
 \newcommand\affiliations[1]{ 
-	\renewcommand{\affiliations}{
-		{#1}
-	}
+  \renewcommand{\affiliations}{
+    {#1}
+  }
 }
 
 %----------------------------------------------------------------------------------------
@@ -207,7 +209,7 @@
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
-      		{$
+          {$
               \begin{array}{l}
               \hspace{4mm} \Huge \textnormal{\faMobile} 
               \end{array}
@@ -252,15 +254,15 @@
     
     {\large \textbf{Overview}}
 
-	\skills
+  \skills
         
         %------------------------------------------------
         
         \vspace{3mm}
        
-	 {\large \textbf{Programming}} 
+   {\large \textbf{Programming}} 
 
-		 \programming
+     \programming
          
         \vspace{3mm}
         \profilesection{Education}{3cm} 
@@ -277,95 +279,96 @@
 
 
 %----------------------------------------------------------------------------------------
-%	 COLOURED SECTION TITLE BOX
+%  COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
+  \tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
 \def\@sectioncolor#1#2#3{%
-	{%
-		\color{pblue} #1#2#3%
-	}%
+  {%
+    \color{pblue} #1#2#3%
+  }%
 }
 
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
-	{%
-		\LARGE\headingfont\color{headercolor}%
-		\@sectioncolor #1%
-	}
+  {%
+    \LARGE\headingfont\color{headercolor}%
+    \@sectioncolor #1%
+  }
   \par\vspace{1mm}
 }
 
 \renewcommand{\subsection}[1]{
-	\par\vspace{.5\parskip}{%
-		\Large\headingfont\color{headercolor} #1%
-	}
-	\par\vspace{.25\parskip}%
+  \par\vspace{.5\parskip}{%
+    \Large\headingfont\color{headercolor} #1%
+  }
+  \par\vspace{.25\parskip}%
 }
 
 \pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	 LONG LIST ENVIRONMENT
+%  LONG LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the long list
 \newenvironment{twenty}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 % \newcommand{\twentyitem}[5]{%
-% 	#1&\parbox[t]{0.83\textwidth}{%
-% 		\textbf{#2}% 
-% 		\hfill%
-% 		{\footnotesize#3}\\%
+%   #1&\parbox[t]{0.83\textwidth}{%
+%     \textbf{#2}% 
+%     \hfill%
+%     {\footnotesize#3}\\%
 %         \ifblank{#4}{}{#4 \\}
-% 		#5\vspace{\parsep}%
-% 	}\\
+%     #5\vspace{\parsep}%
+%   }\\
 % }
 
 \newcommand{\twentyitem}[6]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#3}% 
-		\hfill%
-		{\footnotesize#4}%
+  #1\ifblank{#2}{}{ --}&\parbox[t]{0.83\textwidth}{%
+    \textbf{#3}% 
+    \hfill%
+    {\footnotesize#4}%
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
-		\ifblank{#5}{}{#5 \\}
-		#6%
-	}\\
+    #5
+    
+      #6
+  }\\\ifblank{#6}{}{\\}
 }
 
 %----------------------------------------------------------------------------------------
-%	 SMALL LIST ENVIRONMENT
+%  SMALL LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \setlength{\tabcolsep}{0pt}
 
 % New environment for the small list
 \newenvironment{twentyshort}{%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
-	\end{tabular*}
+  \end{tabular*}
 }
 
 \newcommand{\twentyitemshort}[2]{%
-	#1&\parbox[t]{0.83\textwidth}{%
-		#2%
-	}\\
+  #1&\parbox[t]{0.83\textwidth}{%
+    #2%
+  }\\
 }
 
 %----------------------------------------------------------------------------------------
-%	 MARGINS AND LINKS
+%  MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.1cm,nohead,nofoot]{geometry}

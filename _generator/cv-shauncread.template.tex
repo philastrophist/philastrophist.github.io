@@ -21,18 +21,19 @@
 % Command for printing skill overview bubbles
 \newcommand\skills{ 
 ~
-	\smartdiagram[bubble diagram]{
-        \textbf{Astronomer},
-        \textbf{~~Bayesian~~}\\\textbf{~Statistics~},
-        \textbf{~~Big Data~~},
-        \textbf{~~Observer~~},
-        \textbf{~~Numerical~}\\
-        \textbf{~Techniques~}
+    \smartdiagram[bubble diagram]{
+        \textbf{Astronomer~~},
+        \textbf{~Bayesian~}\\\textbf{Statistics},
+        \textbf{~Big Data~},
+        \textbf{~Observer~},
+        \textbf{Numerical}\\
+        \textbf{Techniques}
     }
 }
 
+
 % Programming skill bars
-\programming{{C $\textbullet$ C++  $\textbullet$ R $\textbullet$ Ruby $\textbullet$ IDL $\textbullet$ html / 2.5}, {Shell $\textbullet$ SQL $\textbullet$ Matlab $\textbullet$ \large \LaTeX  / 4}, {Python / 5.5}}
+\programming{Python}{{Shell $\textbullet$ SQL $\textbullet$ Matlab $\textbullet$ \large \LaTeX}}{{C $\textbullet$ C++  $\textbullet$ R $\textbullet$ Ruby $\textbullet$ IDL $\textbullet$ html}}
 
 % Projects text
 \education{
@@ -74,33 +75,33 @@
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions \twentyitem{<dates>}{<title>}{<location>}{<description>}
-    %FORMAT[experience][LIST] \twentyitem{%start% -}{%end%}{%name%}{%location%}{%info%}{%output%\vspace{4pt}%bullets%} \\
+    %FORMAT[experience][LIST] \twentyitem{%start% -}{%end%}{%name%}{%location%}{%info%}{%output%\vspace{4pt}%bullets%}
 \end{twenty}
 
-\newpage
-\newgeometry{left=2cm,top=2cm,nohead,nofoot}
 %----------------------------------------------------------------------------------------
 %	 RESEARCH
 %----------------------------------------------------------------------------------------
+\vspace{-12pt}
 \section{Research Interests}
 \begin{itemize}
     %FORMAT[interests][LIST] \item \textbf{%name%}: %desc%
 \end{itemize}
 
+\newgeometry{left=2cm,top=2cm,nohead,nofoot}
 \section{Publications}
 \subsection{Published}
 \begin{itemize}
-    %FORMAT[published][LIST] \item \textit{%title%}, %authors% -- %bibcode%\\
+    %FORMAT[published][LIST] \item \textit{%title%}\\{\small %authors% -- %bibcode%}
 \end{itemize}
 
 \subsection{Submitted and in preparation}
 \begin{itemize}
-    %FORMAT[unpublished][LIST] \item \textit{%title%}, %authors% -- %pub%\\
+    %FORMAT[unpublished][LIST] \item \textit{%title%}\\{\small %authors% -- %pub%}
 \end{itemize}
 
 \section{Presentations}
 \begin{twenty}
-    %FORMAT[presentations][LIST] \twentyitem{%date%}{}{%meeting%}{%organiser%}{%location%}{%what%}\\
+    %FORMAT[presentations][LIST] \twentyitem{%date%}{}{%meeting%}{%organiser%}{%location%}{%what%}
 \end{twenty}
 
 \end{document} 
