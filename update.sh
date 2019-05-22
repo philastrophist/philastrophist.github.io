@@ -15,5 +15,9 @@ if git status --porcelain | grep latex/ | grep -v "*.pdf"; then
   cd ..
 fi
 
+npages="$(pdfinfo cv.pdf | grep Pages | awk '{print $2}')"
 
-
+if [[ "$npages" -gt  "$ALLOWED_CV_PAGES" ]]; then
+	echo "cv has more than $npages pages"
+	exit 1
+fi
