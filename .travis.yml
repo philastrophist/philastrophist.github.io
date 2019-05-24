@@ -25,6 +25,9 @@ deploy:
     on:
       branch: develop
     target_branch: develop
+before_script:
+  - sudo apt-get update
+  - sudo apt-get install poppler-utils
 script:
   - sudo apt-get install git-flow
   - git config core.fileMode false
