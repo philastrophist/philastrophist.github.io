@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /contact/
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+	{% include sidebar.html %}
+<div class="archive" id="wufoo-z1c5o3u61qbomnq"> <h1 class="page__title">Contact me</h1> <a href="https://lapsedpacifist.wufoo.com/forms/z1c5o3u61qbomnq"></a>. </div> <script type="text/javascript"> var z1c5o3u61qbomnq; (function(d, t) { var s = d.createElement(t), options = { 'userName':'lapsedpacifist', 'formHash':'z1c5o3u61qbomnq', 'autoResize':true, 'height':'434', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1c5o3u61qbomnq = new WufooForm(); z1c5o3u61qbomnq.initialize(options); z1c5o3u61qbomnq.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+
+</div>

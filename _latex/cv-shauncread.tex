@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\newcommand{\tightlist}{}
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+    \smartdiagram[bubble diagram]{
+        \textbf{Astronomer~~},
+        \textbf{~Bayesian~}\\\textbf{Statistics},
+        \textbf{~Big Data~}\\\textbf{\& HPC},
+        \textbf{~Observer~},
+        \textbf{Numerical}\\
+        \textbf{Techniques}
+    }
+}
+
+
+% Programming skill bars
+\programming{Python}{{Shell $\textbullet$ SQL $\textbullet$ Matlab $\textbullet$ \large \LaTeX}}{{C $\textbullet$ C++  $\textbullet$ R $\textbullet$ Ruby $\textbullet$ IDL $\textbullet$ html}}
+
+% Projects text
+\education{
+     \textbf{Ph.D., Astronomy} \\
+ University of Hertfordshire, UK \\
+ 2015 - Present \\
+ Expected completion: 2019\\
+
+ \textbf{MPhys, Physics} \\
+ Durham University, UK \\
+ 2010 - 2014 \\
+ 2:1 with Honours\\
+
+}
+
+\affiliations{
+ Fellow of the Royal Astronomical Society, \textit{FRAS}\\
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Shaun C Read} % Your name
+\cvjobtitle{Ph.D.~Student} % Job
+% title/career
+
+\cvlinkedin{}
+\cvgithub{philastrophist}
+\cvnumberphone{}
+\cvsite{shaun.science/} % Personal website
+\cvmail{shaun.c.read@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+     I am a PhD student of 3.5 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
+I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
+My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
+next generation of surveys.
+
+
+\subsection{Research Interests}
+\begin{itemize}
+     \item \textbf{Star-formation}: LOFAR, FIR, empirical relations, FIRC, MagPhys, SFG-AGN interface.
+ \item \textbf{Reverberation mapping}: High redshift, photometric techniques, $t_{lag}-L_{5100}$, selection
+biases.
+ \item \textbf{Big data \& Bayesian analysis}: Large surveys, advanced Bayesian statistical inference, bias mitigation.
+\end{itemize}
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions \twentyitem{<dates>}{<title>}{<location>}{<description>}
+     \twentyitem{Oct 2015}{Present}{Ph.D.~student}{University of Hertfordshire}{Supervisor: Dr Daniel J.B. Smith}{Thesis: Measuring the Physical Properties of Distant Galaxies and Black
+Holes in the Era of Surveys\begin{itemize}
+\tightlist
+\item
+  Studying the relation between the star-formation rate and radio
+  luminosity of galaxies.
+\item
+  Using new photometric time-series techniques to estimate quasar
+  black-hole masses with reverberation mapping.
+\item
+  Innovating new Bayesian methods to infer complete distributions from
+  incomplete, noisy data in order to mitigate observational bias and
+  explore large datasets.
+\end{itemize}}
+ \twentyitem{Jun 2016}{}{Observing}{William Herschel Telescope, La Palma}{}{}
+ \twentyitem{Jan 2016}{Present}{Programming teaching assistant \& tutor}{University of Hertfordshire, UK}{}{\begin{itemize}
+\tightlist
+\item
+  Taught students Python and Matlab for scientific programming courses.
+\item
+  Assisted students with programming exercises.
+\item
+  Lead programming lectures and demonstrations.
+\end{itemize}}
+ \twentyitem{Nov 2016}{Mar 2017}{`Physics of stars' demonstrator}{University of Hertfordshire, UK}{}{\begin{itemize}
+\tightlist
+\item
+  Assisted students at the Bayfordbury teaching observatory.
+\item
+  Instructed in the use of 16-inch telescopes and the reduction of data.
+\item
+  Projects included PNe imaging and constructing open cluster
+  HR-diagrams.
+\end{itemize}}
+ \twentyitem{Jul 2014}{Jul 2015}{Insight Analyst}{Linkdex, UK}{Processing big data from raw consumer search patterns to an explanative
+format suitable for client business strategies.}{\begin{itemize}
+\tightlist
+\item
+  Big data processing with Python \& sci-kit learn
+\item
+  Communication with the backend team
+\item
+  API design, visualisation, and automation development.
+\end{itemize}}
+ \twentyitem{Jun 2013}{Aug 2013}{Summer Student}{National Physical Laboratory, UK}{Supervisor: Dr Alastair Sinclair}{\begin{itemize}
+\tightlist
+\item
+  Worked with the Time \& Frequency Team.
+\item
+  Analysed Gaussian beam quality for the strontium ion optical clock
+  group.
+\item
+  Developed analytical Matlab code and the optical bench setup required.
+\end{itemize}}
+\end{twenty}
+
+
+\begin{publications}
+\section{Publications}
+\subsection{Published}
+\begin{itemize}
+     \item \textit{The Far-Infrared Radio Correlation at low radio frequency with
+LOFAR/H-ATLAS}\\{\small \textbf{Read, S. C.}; Smith, D. J. B.; Gürkan, G.; Hardcastle, M. J.;
+Williams, W. L.; Best, P. N.; Brinks, E.; Calistro-Rivera, G.; ChyŻy, K.
+T.; Duncan, K.; Dunne, L.; Jarvis, M. J.; Morabito, L. K.; Prandoni, I.;
+Röttgering, H. J. A.; Sabater, J.; Viaene, S. -- 2018MNRAS.480.5625R}
+ \item \textit{LOFAR/H-ATLAS: a deep low-frequency survey of the Herschel-ATLAS North
+Galactic Pole field}\\{\small Hardcastle, M. J.; Gürkan, G.; van Weeren, R. J.; Williams, W. L.; Best,
+P. N.; de Gasperin, F.; Rafferty, D. A.; \textbf{Read, S. C.}; Sabater,
+J.; Shimwell, T. W.; Smith, D. J. B.; Tasse, C.; Bourne, N.; Brienza,
+M.; Brüggen, M.; Brunetti, G.; Chyży, K. T.; Conway, J.; Dunne, L.;
+Eales, S. A.; Maddox, S. J.; Jarvis, M. J.; Mahony, E. K.; Morganti, R.;
+Prandoni, I.; Röttgering, H. J. A.; Valiante, E.; White, G. J. -- 2016MNRAS.462.1910H}
+\end{itemize}
+
+\subsection{Submitted and in preparation}
+\begin{itemize}
+     \item \textit{Highly Efficient Photometric Reverberation Mapping at High Redshift}\\{\small \textbf{Read, S.C.}; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G. -- submitted to MNRAS}
+ \item \textit{On the Causes of the Mass Dependency of the Star-formation Rate -- Radio
+Luminosity Relation with LOFAR, Horizon-AGN, and CANDID}\\{\small \textbf{Read, S.C.}; Smith, D.J.B.; Gürkan, G.; Hardcastle, M.J.; et al. -- in prep.}
+ \item \textit{A LOFAR-IRAS Cross-match Study: The Far-infrared Radio Correlation and
+the 150 MHz Luminosity as a Star-formation Rate Tracer}\\{\small Wang, L.; Rowan-Robinson, M.; Gao, F.; Bonato, M.; Calistro-Rivera, G.;
+Chyży, K.T.; Duncan, K.J.; Farrah, D.; Gurkan, G.; Hardcastle, M.J.;
+McCheyne, I.; Prandoni, I.; \textbf{Read, S.C.}; Röttgering, H.J.A.;
+Sabater, J.; Shimwell, T. W.; Smith, D.J.B.; Williams, W.L. -- in prep.}
+ \item \textit{Galaxy Morphological Classification in Deep-Wide Surveys via
+Unsupervised Machine Learning}\\{\small Martin, G.; Kaviraj, S.; Hocking, A.; \textbf{Read, S.C.}; Geach, J. -- in prep.}
+ \item \textit{Bias and Accretion Rate Dependency in the Reverberation-Mapped
+Lag-luminosity Relation}\\{\small \textbf{Read, S.C.}; Smith, D.J.B.; et al. -- in prep.}
+ \item \textit{Low Mass Stars and Multiple Systems in Gaia}\\{\small González-Egea, E.; Pinfield, D.; \textbf{Read, S.C.}; et al. -- in prep.}
+\end{itemize}
+
+\section{Presentations}
+\begin{twentyfull}
+     \twentyitemfull{April 2018}{}{European Week of Astronomy and Space Science}{European Astronomical Society, \emph{EAS}}{University of Liverpool, UK}{poster}
+ \twentyitemfull{July 2017}{}{National Astronomy Meeting}{Royal Astronomical Society, \emph{RAS}}{University of Hull, UK}{contributed talk}
+ \twentyitemfull{June 2016}{}{National Astronomy Meeting}{Royal Astronomical Society, \emph{RAS}}{University of Nottingham, UK}{contributed talk, poster}
+ \twentyitemfull{May 2016}{}{The Cosmic FIR Landscape with H-ATLAS}{H-ATLAS consortium}{University of Lisbon, Portugal}{contributed talk}
+\end{twentyfull}
+\end{publications}
+\end{document} 
