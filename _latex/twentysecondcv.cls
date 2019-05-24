@@ -349,6 +349,30 @@
 }
 
 %----------------------------------------------------------------------------------------
+%  FULL PAGE LIST
+%----------------------------------------------------------------------------------------
+\newenvironment{twentyfull}{%
+  \begin{tabular*}{1.54\textwidth}{@{\extracolsep{\fill}}ll}
+}{%
+  \end{tabular*}
+}
+
+\newcommand{\twentyitemfull}[6]{%
+  #1\ifblank{#2}{}{ --}&\parbox[t]{1.2\textwidth}{%
+    \textbf{#3}% 
+    \hfill%
+    {\footnotesize#4}%
+        }\\%
+    #2&\parbox[t]{1.2\textwidth}{%
+    #5
+    \hfill%
+    {\footnotesize#6}%
+    
+  }\\\ifblank{#5}{}{\\}
+}
+
+
+%----------------------------------------------------------------------------------------
 %  SMALL LIST ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
@@ -396,3 +420,13 @@
     bubble text opacity = 1,
 }
 
+\newenvironment{publications}{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{-7cm}%
+\setlength{\rightmargin}{0cm}%
+% \setlength{\listparindent}{\parindent}%
+% \setlength{\itemindent}{\parindent}%
+% \setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}

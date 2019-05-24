@@ -9,14 +9,22 @@ env:
     - ALLOWED_CV_PAGES=2
     - secure: "F+CfutkOVhLI/xCm21Gon9iWbgAQ9QSK4q5AvULULRsHK6+NVKwEeSast4DNItQLn1PCjqOOMYF6SSwXgfUiXFI6d25dJNJ1Kbbr/6nEzEyx3irC1NEHMdFiXKSSquE7pc35IokcKzJa1jF/ZPqjWPieOIGnTFfDR9tenaYEsB6IEB6bBXcgMrCy+uIiWxmo3eXNLFc8pRMSsHxOrCz71pFmBCaHB0O8A14joxNMCqjjoelxWpKtgLVmSc7JpuQgNCpU7Wf7+BB38t+sU2zNDynXatmV6rnEp3TzFQH8rFN6mGNYUpUjcG2261sGrXVuZQOe7lVDNuElPaeZMC7h3kFHWbqeCf+kMH88CF0GmKMlz8bLkBcp+FoUjn4v9BKSEJkhL7uz0MiVig4kFGI97gd0mvhFkyJF1EOpdLaP6KpbllsQXkXsvva0+tPZZD5C+BLMdaeAp+qJNwx2yboomqnp5+bmu25N7qvnp+7xDfXC8rSxcWQvBNkv5+6UY3E1gAPSWFLkK27FLmS3Sq7IpAY5ZJhzJJ1ZQ9Txr1i5OwgHQNLx78LMCwf9mmbiLRpmambXfFpq9L0IdIdugvoG+f5jFKe0Js5mqngebc5LZhTpbTYZ9n5Wi8xp1f6jJXEQjgcTnn2q3IhJOXUoViXPxMGuPlbZKtpFa0UFpeYiYEQ=" # ADS-DEV-KEY
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  repo: philastrophist/philastrophist.github.io
-  on:
-    branch: master
-  target_branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    repo: philastrophist/philastrophist.github.io
+    on:
+      branch: master
+    target_branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    repo: philastrophist/philastrophist.github.io
+    on:
+      branch: develop
+    target_branch: develop
 script:
   - sudo apt-get install git-flow
   - git config core.fileMode false

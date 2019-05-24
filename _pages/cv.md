@@ -40,7 +40,7 @@ Holes in the Era of Surveys
 -   Studying the relation between the star-formation rate and radio
     luminosity of galaxies.
 -   Using new photometric time-series techniques to estimate quasar
-    black-hole masses using reverberation mapping.
+    black-hole masses with reverberation mapping.
 -   Innovating new Bayesian methods to infer complete distributions from
     incomplete, noisy data in order to mitigate observational bias and
     explore large datasets.
