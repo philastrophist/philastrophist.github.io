@@ -12,7 +12,7 @@ redirect_from:
 Download cv [here](/cv.pdf)
 
 ## Summary
- I am a PhD student of 3.5 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+ I am a PhD graduand of 4 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
 My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
 I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
 My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
@@ -32,7 +32,7 @@ biases.
 
 
 ## Experience
-**Ph.D. student**  
+**Ph.D.**  
 *University of Hertfordshire*, Oct 2015 - Present  
 Supervisor: Dr Daniel J.B. Smith  
 Thesis: Measuring the Physical Properties of Distant Galaxies and Black
@@ -93,8 +93,8 @@ Supervisor: Dr Alastair Sinclair
 
 ## Education
 **Ph.D., Astronomy**  
-*University of Hertfordshire, UK*, 2015 - Present  
-Expected completion: 2019
+*University of Hertfordshire, UK*, 2015 - 2019  
+Passed viva w/ minor corrections
 
 **MPhys, Physics**  
 *Durham University, UK*, 2010 - 2014  
