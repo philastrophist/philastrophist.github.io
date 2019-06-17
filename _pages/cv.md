@@ -57,7 +57,7 @@ Holes in the Era of Surveys
   
 -   Taught students Python and Matlab for scientific programming
     courses.
--   Assisted students with programming exercises.
+-   Ran code review sessions for post-graduates and Ph.D. students.
 -   Lead programming lectures and demonstrations.
 
 **'Physics of stars' demonstrator**  
