@@ -19,7 +19,7 @@ I have also branched out to develop photometric reverberation mapping techniques
 
 Currently, I'm developing a Gaussian mixutre model technique [CANDID](https://github.com/philastrophist/candid) that can mitigate the effects of astronomical biases and incomplete datasets whilst also modelling an entire multidimensional distribution.
 I am applying this technique to explore the causes of the mass dependency of the star-formation rate -- radio luminosity relation (see Gulay's [paper](https://academic.oup.com/mnras/article/475/3/3010/4795315)).
-To do this, I am using the latest LOFAR data release (DR2) together with [Horizon-AGN simulation](https://www.horizon-simulation.org/) to model the full distribution of star-formating properties over redshift and associate it with supernovae energy output.
+To do this, I am using the latest LOFAR data release (DR2) together with [Horizon-AGN simulation](https://www.horizon-simulation.org/) to model the full distribution of star-forming properties over redshift and associate it with supernovae energy output.
 Watch this space!
 
 # Star-formation relations

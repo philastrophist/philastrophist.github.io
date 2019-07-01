@@ -116,7 +116,7 @@ Luminosity Relation with LOFAR, Horizon-AGN, and CANDID*, **Read, S.C.**; Smith,
 the 150 MHz Luminosity as a Star-formation Rate Tracer*, Wang, L.; Rowan-Robinson, M.; Gao, F.; Bonato, M.; Calistro-Rivera, G.;
 Chyży, K.T.; Duncan, K.J.; Farrah, D.; Gurkan, G.; Hardcastle, M.J.;
 McCheyne, I.; Prandoni, I.; **Read, S.C.**; Röttgering, H.J.A.; Sabater,
-J.; Shimwell, T. W.; Smith, D.J.B.; Williams, W.L. - in prep.
+J.; Shimwell, T. W.; Smith, D.J.B.; Williams, W.L. - submitted to MNRAS
 * *Galaxy Morphological Classification in Deep-Wide Surveys via
 Unsupervised Machine Learning*, Martin, G.; Kaviraj, S.; Hocking, A.; **Read, S.C.**; Geach, J. - submitted to MNRAS
 * *Bias and Accretion Rate Dependency in the Reverberation-Mapped
