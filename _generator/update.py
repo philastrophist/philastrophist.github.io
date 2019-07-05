@@ -134,6 +134,25 @@ if __name__ == '__main__':
     for entry in info['unpublished']:
         entry['authors'] = clean_authors(entry)
 
+    import jellyfish
+    from datetime import datetime
+    for pub in info['published']:
+        for n_unpub, unpub in enumerate(info['unpublished']):
+            if int(pub['year']) >= datetime.now().year:
+                pub_string = '; '.join(sorted(pub['authors'].split('; '), key=lambda x: x[0]))
+                unpub_string = '; '.join(sorted(unpub['authors'].split('; '), key=lambda x: x[0]))
+                score = jellyfish.jaro_distance(pub_string.lower(), unpub_string.lower())
+                score *= jellyfish.jaro_distance(pub['title'].lower(), unpub['title'].lower())
+            else:
+                score = 0
+            if score > 0.8 and 'arxiv' not in pub['pub'].lower():
+                print("Publication update:\n================")
+                print(unpub)
+                print('has been detected as published as:')
+                print(pub)
+                print('removing from unpublished. You should update info.yml accordingly \n================')
+                del info['unpublished'][n_unpub]
+
     print('parsing cv...')
     new_latex_cv = parse(latex_cv_template, info, 'latex')
     new_markdown_cv = parse(markdown_cv_template, info, 'md')

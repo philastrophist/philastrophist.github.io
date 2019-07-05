@@ -21,6 +21,7 @@ unpublished:
     authors: ["Wang, L.", "Rowan-Robinson, M.", "Gao, F.", "Bonato, M.", "Calistro-Rivera, G.", "Chyży, K.T.", "Duncan, K.J.", 
               "Farrah, D.", "Gurkan, G.", "Hardcastle, M.J.", "McCheyne, I.", "Prandoni, I.", "Read, S.C.", "Röttgering, H.J.A.",
               "Sabater, J.", "Shimwell, T. W.", "Smith, D.J.B.", "Williams, W.L."]
+    year: 2019
 
   - title: Galaxy Morphological Classification in Deep-Wide Surveys via Unsupervised Machine Learning
     pub: "submitted to MNRAS"
