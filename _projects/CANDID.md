@@ -65,7 +65,7 @@ I have recently been applying CANDID to the LOFAR LoTSS DR1 data in the hopes of
 This is a complex dependency since the shape of the $$SFR-L_{150MHz}$$ relation could non-linearly depend on redshift and mass.
 In addition, there are complex selection effects to be taken into account: magnitude r-band limit with SDSS, BPT emission line selection with MPA-JHU data, and a redshift limit.
 
-That's 9 dimensions, which equates to $$N = kd(d+1)/2 + kd + (k-1)$$$ parameters for the model, where $$k$$ is the number of component Gaussians and $$d$$ is the number of dimensions.
+That's 9 dimensions, which equates to $$N = kd(d+1)/2 + kd + (k-1)$$ parameters for the model, where $$k$$ is the number of component Gaussians and $$d$$ is the number of dimensions.
 
 But it appears to work! Look below for the full corner plot of our 9-dimensional space.
 
@@ -75,6 +75,7 @@ The yellow is our model of what the data would look like in the absence of obscu
 
 Here I have used 9 component Gaussians (set by some very simple Bayesian Information Criterion tests) so this is 548 parameters we are fitting. To include all the uncertainties (which themselves are not Gaussian), would take fair bit of cluster time. So for the purposes of demonstration I have simply bootstrapped the model over realisations of the data drawn from their uncertainty distribution. This has the effect of broadening the posterior distribution and so when we estimate uncertainties on our products, they are quite large. This can be fixed easily, just need to write in the Extreme Deconvolution aspect!
 You can see the bootstrapped realisations in the extracted luminosity function, below.
+
 It is possible to slice through this 9-dimensional model and extract any relation you like. Here we have marginalised over the redshift-luminosity plane (since our model consists only of Gaussians, this 2D marginalisation will also consist of Gaussians!). Then its a simple step to turn $$L_{150}-z$$ into a traditional luminosity function. The one shown below is the total for $$0.004 < z < 0.25$$, but we could just as easily specify one at exactly $$z=0.1$$.
 
 ![model-luminosity-function](../../images/candid/model-luminosity-function-1.jpg)
@@ -96,7 +97,7 @@ All of this works because expectation-maximisation guarantees a likelihood incre
 The blue line in figure above shows the traditional EM algorithm always increasing the likelihood with each step.
 The orange line indicates our stochastic approach. Here, the likelihood *can* decrease because we're approximating the likelihood but it will be stable around that approximation. This means that we can expect increase in likelihood when the noise in the approximation is not too much - i.e. when EM strays too far away from the analytical solution, the current iteration is evaluated as too bad and so it shoots back, creating a cycle.
 
-The result is a holistic model which the user can step through manipulate with ease!
+The result is a holistic model which the user can step through and manipulate with ease!
 
 There are so many more things I want to do with this: 
 
