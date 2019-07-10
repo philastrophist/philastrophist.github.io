@@ -3,6 +3,13 @@ title: "CANDID"
 excerpt: "Complete And Noiseless Distributions from Incomplete Data"
 github: philastrophist/candid
 collection: projects
+redirect_from: 
+    - /projects/CANDID/
+    - /projects/candid/
+    - /projects/CANDID
+    - /projects/candid
+    - /projects/Candid/
+    - /projects/Candid
 ---
 CANDID - "Complete And Noiseless Distributions from Incomplete Data".
 
