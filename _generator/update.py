@@ -118,18 +118,24 @@ if __name__ == '__main__':
     
     print('finding papers...')
     fields = ['title', 'pubdate', 'pub', 'abstract', 'identifier', 'bibcode', 'doi', 'author', 'year']
-    published = []
+    papers = []
     for entry in info['published']['ADS']:
-        for paper in ads.SearchQuery(author='Read, S.C.', sort="year", aff="*Hertfordshire*", 
-                                     database='astronomy', fl=fields):
-            d = {f: getattr(paper, f) for f in fields}
-            d['authors'] = clean_authors(paper)
-            d['title'], d['filename'] = clean_title(paper)
-            d['date'] = clean_date(paper)
-            d['arxiv'] = arxiv_id(paper)
-            published.append(d)
-    print(len(published), 'published papers found on ADS')
-    info['published'] = published
+        query = ads.SearchQuery(author=entry['name'], sort="year", aff=entry['aff'], 
+                                q='year:'+'-'.join(map(str, entry['year'])), 
+                                database='astronomy', fl=fields)
+        for paper in query:
+            if paper not in papers:
+                papers.append(paper)
+
+    info['published'] = []
+    for paper in papers:
+        d = {f: getattr(paper, f) for f in fields}
+        d['authors'] = clean_authors(paper)
+        d['title'], d['filename'] = clean_title(paper)
+        d['date'] = clean_date(paper)
+        d['arxiv'] = arxiv_id(paper)
+        info['published'].append(d)
+    print(len(info['published']), 'published papers found on ADS')
     
     for entry in info['unpublished']:
         entry['authors'] = clean_authors(entry)
@@ -165,7 +171,7 @@ if __name__ == '__main__':
         f.write(new_markdown_cv)
 
     print('updating publication list... ')
-    for paper in published:
+    for paper in info['published']:
         fname = '_publications/{}.md'.format(paper['filename'])
         if (not os.path.exists(fname)) or args.overwrite:
             print('writing new paper:  {}'.format(paper['title']))
