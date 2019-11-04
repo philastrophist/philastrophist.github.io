@@ -117,8 +117,6 @@ the 150 MHz Luminosity as a Star-formation Rate Tracer*, Wang, L.; Rowan-Robinso
 Chyży, K.T.; Duncan, K.J.; Farrah, D.; Gurkan, G.; Hardcastle, M.J.;
 McCheyne, I.; Prandoni, I.; **Read, S.C.**; Röttgering, H.J.A.; Sabater,
 J.; Shimwell, T. W.; Smith, D.J.B.; Williams, W.L. - submitted to MNRAS
-* *Galaxy Morphological Classification in Deep-Wide Surveys via
-Unsupervised Machine Learning*, Martin, G.; Kaviraj, S.; Hocking, A.; **Read, S.C.**; Geach, J. - submitted to MNRAS
 * *Bias and Accretion Rate Dependency in the Reverberation-Mapped
 Lag-luminosity Relation*, **Read, S.C.**; Smith, D.J.B.; et al. - in prep.
 * *Low Mass Stars and Multiple Systems in Gaia*, González-Egea, E.; Pinfield, D.; **Read, S.C.**; et al. - in prep.
