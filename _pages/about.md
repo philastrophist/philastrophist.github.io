@@ -9,9 +9,9 @@ redirect_from:
 ---
 {% include base_path %}
 
-I am a final year Ph.D. student at the University of Hertfordshire. 
+I am a postdoctoral researcher at Il Osservatorio di Roma - INAF, looking into the effect of the colour-gradient bias on the weak-lensing measurements that Euclid will provide.
 My interests lie in mainly in applying Bayesian analysis to big data. 
-Therefore, during my Ph.D. I have got involved with the latest data from [LOFAR](http://www.lofar.org/), [Herschel-ATLAS](https://www.h-atlas.org/), and [SDSS](https://www.sdss.org/).
+Therefore, during my Ph.D. I got involved with the latest data from [LOFAR](http://www.lofar.org/), [Herschel-ATLAS](https://www.h-atlas.org/), and [SDSS](https://www.sdss.org/).
 
 My research attempts to quantify and then disentangle scatter and selection effects from well-known scaling relations. 
 My most recent work includes charaterising how the the relationship between the far-infrared and low frequency radio emission (FIRC) from star-forming galaxies changes over the properties of those galaxies ([paper](publication/2018-11-00-The-Far-Infrared-Radio-Correlation-at-low-radio-frequency-with-LOFAR-H-ATLAS)).  

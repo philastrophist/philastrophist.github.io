@@ -23,6 +23,7 @@ Download cv [here](/cv.pdf)
 
 ## Experience
 %FORMAT[experience][LIST]**%name%**  \n*%location%*, %start% - %end%  \n%info%  \n%output%  \n%bullets%\n
+%FORMAT[other_experience][LIST]**%name%**  \n*%location%*, %start% - %end%  \n%info%  \n%output%  \n%bullets%\n
 
 
 ## Education

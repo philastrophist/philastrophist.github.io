@@ -1,5 +1,5 @@
 summary: |
-  I am a PhD graduand of 4 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+  I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid .
   My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
   I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
   My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
@@ -54,9 +54,9 @@ published:
 info:
   name: Shaun C Read
   github: philastrophist
-  phone: "+44 7909975186"
+  phone: ""
   site: "shaun.science/"
-  occupation: Ph.D. Graduand
+  occupation: Postdoc
   mail: shaun.c.read@gmail.com
 
 skills_bubble: ["Astronomy", "Bayesian statistics", "Big data", "Observational", "Numerical techniques"]
@@ -82,9 +82,20 @@ education:
 affiliations: [['Fellow of the Royal Astronomical Society', 'FRAS']]
 
 experience:
+  - name: Postdoc
+    start: Oct 2019
+    end: Present
+    info: Galaxy shape measures in Euclid
+    location: "Osservatorio Astronomico di Roma - INAF"
+    output: ""
+    bullets: [
+        '* Quanitfying the colour-gradient bias in Euclid weak-lensing measurements',
+        '* Generation of realistic galaxy catalogues',
+        '* Hubble image reduction',
+   ]
   - name: Ph.D.
     start: Oct 2015
-    end: Present
+    end: Oct 2019
     info: "Supervisor: Dr Daniel J.B. Smith"
     output: "Thesis: Measuring the Physical Properties of Distant Galaxies and Black Holes in the Era of Surveys"
     location: University of Hertfordshire
@@ -133,17 +144,19 @@ experience:
       "* Communication with the backend team ",
       "* API design, visualisation, and automation development."
     ]
-  - name: "Summer Student"
-    start: Jun 2013
-    end: Aug 2013
-    output: ""
-    location: National Physical Laboratory, UK
-    info: "Supervisor: Dr Alastair Sinclair"
-    bullets: [
-        "* Worked with the Time & Frequency Team.",
-        "* Analysed Gaussian beam quality for the strontium ion optical clock group.",
-        "* Developed analytical Matlab code and the optical bench setup required."
-    ]
+
+other_experience:
+    - name: "Summer Student"
+      start: Jun 2013
+      end: Aug 2013
+      output: ""
+      location: National Physical Laboratory, UK
+      info: "Supervisor: Dr Alastair Sinclair"
+      bullets: [
+          "* Worked with the Time & Frequency Team.",
+          "* Analysed Gaussian beam quality for the strontium ion optical clock group.",
+          "* Developed analytical Matlab code and the optical bench setup required."
+      ]
 
 presentations:
   - date: April 2018

@@ -12,7 +12,7 @@ redirect_from:
 Download cv [here](/cv.pdf)
 
 ## Summary
- I am a PhD graduand of 4 years at the University of Hertfordshire specialising in Bayesian statistical analysis on big data. 
+ I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid .
 My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
 I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
 My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
@@ -32,8 +32,17 @@ biases.
 
 
 ## Experience
+**Postdoc**  
+*Osservatorio Astronomico di Roma - INAF*, Oct 2019 - Present  
+Galaxy shape measures in Euclid  
+  
+-   Quanitfying the colour-gradient bias in Euclid weak-lensing
+    measurements
+-   Generation of realistic galaxy catalogues
+-   Hubble image reduction
+
 **Ph.D.**  
-*University of Hertfordshire*, Oct 2015 - Present  
+*University of Hertfordshire*, Oct 2015 - Oct 2019  
 Supervisor: Dr Daniel J.B. Smith  
 Thesis: Measuring the Physical Properties of Distant Galaxies and Black
 Holes in the Era of Surveys  

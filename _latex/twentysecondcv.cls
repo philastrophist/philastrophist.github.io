@@ -420,7 +420,7 @@
     bubble text opacity = 1,
 }
 
-\newenvironment{publications}{%
+\newenvironment{finalpages}{%
 \begin{list}{}{%
 \setlength{\topsep}{0pt}%
 \setlength{\leftmargin}{-7cm}%
