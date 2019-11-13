@@ -10,7 +10,7 @@ locale                   : "en-GB"
 title                    : "Shaun C Read"
 title_separator          : "-"
 name                     : &name "Shaun C Read"
-description              : &description "Postdoctoral researcher at Osservatorio Astronomico di Roma - INAF"
+description              : &description "Postdoctoral researcher at il Osservatorio Astronomico di Roma - INAF"
 url                      : http://shaun.science # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "philastrophist/philastrophist.github.io"
@@ -83,7 +83,7 @@ author:
   name             : "Shaun C Read"
   avatar           : "profile.jpg"
   bio              : "Postdoctoral Researcher"
-  location         : "Osservatorio Astronomical di Roma"
+  location         : "Osservatorio Astronomico di Roma"
   employer         :
   pubmed           : 
   googlescholar    : "vKH_26AAAAAJ"
