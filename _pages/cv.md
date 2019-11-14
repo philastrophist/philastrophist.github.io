@@ -118,9 +118,12 @@ Passed viva w/ minor corrections
   
   
 ## Submitted and in preparation
-* *Highly Efficient Photometric Reverberation Mapping at High Redshift*, **Read, S.C.**; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G. - submitted to MNRAS
+* *The Performance of Photometric Reverberation Mapping at High Redshift
+and the Reliability of Damped Random Walk Models*, **Read, S.C.**; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G. - submitted to MNRAS
 * *On the Causes of the Mass Dependency of the Star-formation Rate -- Radio
 Luminosity Relation with LOFAR, Horizon-AGN, and CANDID*, **Read, S.C.**; Smith, D.J.B.; Gürkan, G.; Hardcastle, M.J.; et al. - in prep.
+* *A Markov Chain Monte Carlo approach for measurement of jet precession in
+radio-loud active galactic nuclei*, Horton, M.; Hardcastle, M.J.; **Read, S.C.**; Krause, M. - submitted to MNRAS
 * *Bias and Accretion Rate Dependency in the Reverberation-Mapped
 Lag-luminosity Relation*, **Read, S.C.**; Smith, D.J.B.; et al. - in prep.
 * *Low Mass Stars and Multiple Systems in Gaia*, González-Egea, E.; Pinfield, D.; **Read, S.C.**; et al. - in prep.
