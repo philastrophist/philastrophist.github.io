@@ -22,11 +22,11 @@
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      {% if author.employer %}
+        <li><i class="fa ai-1x fa-map-marker" aria-hidden="true"></i>{% if employer_site %}<a href="{{author.employer_site}}">{% endif %}{{ author.employer }}</a></li>
+      {% endif %}
       {% if author.location %}
         <li><i class="fa ai-1x fa-map-marker " aria-hidden="true"></i> {{ author.location }}</li>
-      {% endif %}
-      {% if author.employer %}
-        <li><i class="fa ai-1x fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -34,8 +34,8 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
-      {% if author.ads %}
-        <li><a href="https://ui.adsabs.harvard.edu/public-libraries/{{ author.ads }}"><i class="ai ai-ads ai-1x"></i> ADS</a></li>
+      {% if author.orcid %}
+        <li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A{{ author.orcid }}&sort=date%20desc%2C%20bibcode%20desc&p_=0"><i class="ai ai-ads ai-1x"></i> ADS</a></li>
       {% endif %}
       {% if author.arxiv %}
         <li><a href="http://arxiv.org/a/{{ author.arxiv }}"><i class="ai ai-arxiv ai-1x"></i> ArXiv</a></li>
