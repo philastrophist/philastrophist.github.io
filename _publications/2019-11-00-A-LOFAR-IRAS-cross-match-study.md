@@ -39,5 +39,4 @@ L<SUB>150</SUB> (L<SUB>☉</SUB>) = 1.31(±0.05) × log SFR<SUB>60</SUB>
 (L<SUB>☉</SUB>) = 1.37 (±0.05) × log SFR<SUB>IR</SUB> (M<SUB>☉</SUB>
 yr<SUP>-1</SUP>) + 3.09(±0.05), which show excellent agreement with each
 other.
-<P />
 
