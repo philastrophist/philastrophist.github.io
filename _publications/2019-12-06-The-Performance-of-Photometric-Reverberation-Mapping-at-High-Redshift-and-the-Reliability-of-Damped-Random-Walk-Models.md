@@ -7,7 +7,7 @@ venue: 'accepted by Monthly Notices of the Royal Astronomical Society'
 arxiv: 
 doi: 
 ---
- **Read, S.C.**; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G.
+ **Read, S.**; Smith, D.; Jarvis, M.; Gürkan, G.
 
  Accurate methods for reverberation mapping using photometry are highly
 sought after since they are inherently less resource intensive than

@@ -7,10 +7,10 @@ venue: 'Astronomy and Astrophysics'
 arxiv: 
 doi: 10.1051/0004-6361/201935913
 ---
- Wang, L.; Gao, F.; Duncan, K. J.; Williams, W. L.; Rowan-Robinson, M.;
-Sabater, J.; Shimwell, T. W.; Bonato, M.; Calistro-Rivera, G.; Chyży, K.
-T.; Farrah, D.; Gürkan, G.; Hardcastle, M. J.; McCheyne, I.; Prandoni,
-I.; **Read, S. C.**; Röttgering, H. J. A.; Smith, D. J. B.
+ Wang, L.; Gao, F.; Duncan, K.J.; Williams, W.L.; Rowan-Robinson, M.;
+Sabater, J.; Shimwell, T.W.; Bonato, M.; Calistro-Rivera, G.; Chyży,
+K.T.; Farrah, D.; Gürkan, G.; Hardcastle, M.J.; McCheyne, I.; Prandoni,
+I.; **Read, S.C.**; Röttgering, H.J.A.; Smith, D.J.B.
 
  <BR /> Aims: We aim to study the far-infrared radio correlation (FIRC)
 at 150 MHz in the local Universe (at a median redshift ⟨z⟩̃0.05) and

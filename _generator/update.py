@@ -7,6 +7,8 @@ from string import ascii_letters
 import re
 import os
 from collections import namedtuple
+import jellyfish
+from datetime import datetime
 
 
 class Parser:
@@ -87,12 +89,42 @@ def clean_title(paper):
 def clean_date(paper):
     return paper.pubdate.replace('00', '01')
 
+
+def clean_single_author(author):
+    author = author.strip()
+    if author == 'et al.':
+        return author
+    last, first = author.split(', ')
+    first = '.'.join([i[0].strip('.') for i in first.split()])
+    return '{}, {}.'.format(last, first).replace('*', '')
+
 def clean_authors(paper, start='**', end='**'):
     try:
         authors = paper.author
     except AttributeError:
         authors = paper['authors']
+    authors = map(clean_single_author, authors)
     return '; '.join(['{}{}{}'.format(start, i, end) if 'Read, S' in i else i for i in authors])
+
+def paper_similarity(paper1, paper2):
+    try:
+        authorid1 = '; '.join(sorted(clean_authors(paper1).split('; '), key=lambda x: x[0])).lower()
+    except ValueError:
+        authorid1 = paper1['authors']
+    try:
+        authorid2 = '; '.join(sorted(clean_authors(paper2).split('; '), key=lambda x: x[0])).lower()
+    except ValueError:
+        authorid2 = paper2['authors']
+    try:
+        titleid1 = paper1.title[0].lower()
+    except AttributeError:
+        titleid1 = paper1['title'].lower()
+    try:
+        titleid2 = paper2.title[0].lower()
+    except AttributeError:
+        titleid2 = paper2['title'].lower()
+    return jellyfish.jaro_distance(authorid1, authorid2) * jellyfish.jaro_distance(titleid1, titleid2)
+
 
 
 if __name__ == '__main__':
@@ -117,38 +149,41 @@ if __name__ == '__main__':
         info = yaml.load(f, Loader=Loader)
     
     print('finding papers...')
-    fields = ['title', 'pubdate', 'pub', 'abstract', 'identifier', 'bibcode', 'doi', 'author', 'year']
+    fields = ['title', 'pubdate', 'pub', 'abstract', 'identifier', 'bibcode', 'doi', 'author', 'year', 'aff']
     papers = []
     for entry in info['published']['ADS']:
-        query = ads.SearchQuery(author=entry['name'], sort="year", aff=entry['aff'], 
+        query = ads.SearchQuery(author=entry['name'], 
                                 q='year:'+'-'.join(map(str, entry['year'])), 
                                 database='astronomy', fl=fields)
         for paper in query:
             if paper not in papers:
                 papers.append(paper)
 
+    titles = [p.title[0] for p in papers]
     info['published'] = []
+    print('{} possible titles'.format(len(titles)))
     for paper in papers:
-        d = {f: getattr(paper, f) for f in fields}
-        d['authors'] = clean_authors(paper)
-        d['title'], d['filename'] = clean_title(paper)
-        d['date'] = clean_date(paper)
-        d['arxiv'] = arxiv_id(paper)
-        info['published'].append(d)
+        if 'Cat' not in paper.bibcode:
+            similarities = [paper_similarity(paper, p) > 0.8 for p in papers]
+            only_preprint = 'arxiv' in paper.bibcode.lower() and sum(similarities) == 1
+            pubprint = 'arxiv' not in paper.bibcode.lower()
+            if only_preprint or pubprint:
+                d = {f: getattr(paper, f) for f in fields}
+                d['authors'] = clean_authors(paper)
+                d['title'], d['filename'] = clean_title(paper)
+                d['date'] = clean_date(paper)
+                d['arxiv'] = arxiv_id(paper)
+                info['published'].append(d)
     print(len(info['published']), 'published papers found on ADS')
+    print('\n'.join('{}, {}'.format(p['title'], p['bibcode']) for p in info['published']))
     
     for entry in info['unpublished']:
         entry['authors'] = clean_authors(entry)
 
-    import jellyfish
-    from datetime import datetime
     for pub in info['published']:
         for n_unpub, unpub in enumerate(info['unpublished']):
             if int(pub['year']) >= datetime.now().year:
-                pub_string = '; '.join(sorted(pub['authors'].split('; '), key=lambda x: x[0]))
-                unpub_string = '; '.join(sorted(unpub['authors'].split('; '), key=lambda x: x[0]))
-                score = jellyfish.jaro_distance(pub_string.lower(), unpub_string.lower())
-                score *= jellyfish.jaro_distance(pub['title'].lower(), unpub['title'].lower())
+                score = paper_similarity(pub, unpub)
             else:
                 score = 0
             if score > 0.8 and 'arxiv' not in pub['pub'].lower():
