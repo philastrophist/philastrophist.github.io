@@ -1,11 +1,11 @@
 ---
 title: "The Performance of Photometric Reverberation Mapping at High Redshift and the Reliability of Damped Random Walk Models"
 collection: publications
-permalink: /publication/2019-01-00-The-Performance-of-Photometric-Reverberation-Mapping-at-High-Redshift-and-the-Reliability-of-Damped-Random-Walk-Models
-date: 2019-01-00
-venue: 'accepted by MNRAS'
-arxiv: -
-doi: -
+permalink: /publication/2019-12-06-The-Performance-of-Photometric-Reverberation-Mapping-at-High-Redshift-and-the-Reliability-of-Damped-Random-Walk-Models
+date: 2019-12-06
+venue: 'accepted by Monthly Notices of the Royal Astronomical Society'
+arxiv: 
+doi: 
 ---
  **Read, S.C.**; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G.
 

@@ -52,6 +52,8 @@ layout: default
             <i> | Open access with <a href="https://arxiv.org/abs/{{ page.arxiv }}">ArXiv</a></i>
           </p>
           {% endif %} 
+        {% elsif page.venue and page.date %}
+          <p><i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
         {% elsif page.collection == 'projects' %}
 
         {% elsif page.date %}

@@ -12,7 +12,8 @@ Williams, W. L.; Best, P. N.; Brinks, E.; Calistro-Rivera, G.; ChyŻy, K.
 T.; Duncan, K.; Dunne, L.; Jarvis, M. J.; Morabito, L. K.; Prandoni, I.;
 Röttgering, H. J. A.; Sabater, J.; Viaene, S.
 
- The radio and far-infrared luminosities of star-forming galaxies are
+
+The radio and far-infrared luminosities of star-forming galaxies are
 tightly correlated over several orders of magnitude; this is known as
 the far-infrared radio correlation (FIRC). Previous studies have shown
 that a host of factors conspire to maintain a tight and linear FIRC,

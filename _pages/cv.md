@@ -118,8 +118,6 @@ Passed viva w/ minor corrections
   
   
 ## Submitted and in preparation
-* *The Performance of Photometric Reverberation Mapping at High Redshift
-and the Reliability of Damped Random Walk Models*, **Read, S.C.**; Smith, D.J.B.; Jarvis, M.J.; Gürkan, G. - accepted by MNRAS
 * *On the Causes of the Mass Dependency of the Star-formation Rate -- Radio
 Luminosity Relation with LOFAR, Horizon-AGN, and CANDID*, **Read, S.C.**; Smith, D.J.B.; Gürkan, G.; Hardcastle, M.J.; et al. - in prep.
 * *A Markov Chain Monte Carlo approach for measurement of jet precession in
