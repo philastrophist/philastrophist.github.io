@@ -1,7 +1,7 @@
 ---
-title: "The Performance of Photometric Reverberation Mapping at High Redshift and the Reliability of Damped Random Walk Models"
+title: "The performance of photometric reverberation mapping at high redshift and the reliability of damped random walk models"
 collection: publications
-permalink: /publication/\_publications/2019-12-06-The-Performance-of-Photometric-Reverberation-Mapping-at-High-Redshift-and-the-Reliability-of-Damped-Random-Walk-Models.md
+permalink: /publication/2019-12-06-The-performance-of-photometric-reverberation-mapping-at-high-redshift-and-the-reliability-of-damped-random-walk-models
 date: 2019-12-06
 venue: 'accepted by Monthly Notices of the Royal Astronomical Society'
 arxiv: 

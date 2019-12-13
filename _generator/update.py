@@ -74,10 +74,11 @@ ARXIV = r'arXiv:(\d{4}\.\d{5})'
 DOI = r'(.*/.*/.*)'
 
 
-def arxiv_id(paper):
-    for id in paper.identifier:
-        if 'arxiv:' in id.lower():
-            return '{}'.format(re.search(ARXIV, id).groups()[0])
+def arxiv_id(*papers):
+    for paper in papers:
+        for id in paper.identifier:
+            if 'arxiv:' in id.lower():
+                return '{}'.format(re.search(ARXIV, id).groups()[0])
     else:
         return ''
 
@@ -128,6 +129,17 @@ def clean_authors(paper, start='**', end='**', limit=29):
                     delete = me - too_many
                 short_authors = short_authors[:delete] + ['...'] + short_authors[me:]
     return '; '.join(authors), '; '.join(short_authors)
+
+def clean_abstract(paper):
+    try:
+        abstract = paper.abstract
+    except AttributeError:
+        try:
+            abstract = paper['abstract']
+        except KeyError:
+            return ""
+    abstract = abstract.replace('`', "'")
+    return abstract
 
 def paper_similarity(paper1, paper2):
     try:
@@ -187,21 +199,23 @@ if __name__ == '__main__':
     print('{} possible titles'.format(len(titles)))
     for paper in papers:
         if 'Cat' not in paper.bibcode:
-            similarities = [paper_similarity(paper, p) > 0.8 for p in papers]
-            only_preprint = 'arxiv' in paper.bibcode.lower() and sum(similarities) == 1
+            similarities = [p for p in papers if paper_similarity(paper, p) > 0.8]
+            only_preprint = 'arxiv' in paper.bibcode.lower() and len(similarities) == 1
             pubprint = 'arxiv' not in paper.bibcode.lower()
             if only_preprint or pubprint:
                 d = {f: getattr(paper, f) for f in fields}
                 d['authors'], d['short_authors'] = clean_authors(paper)
                 d['title'], d['filename'] = clean_title(paper)
                 d['date'] = clean_date(paper)
-                d['arxiv'] = arxiv_id(paper)
+                d['arxiv'] = arxiv_id(paper, *similarities)
+                d['abstract'] = clean_abstract(paper)
                 info['published'].append(d)
     print(len(info['published']), 'published papers found on ADS')
     print('\n'.join('{}, {}'.format(p['title'], p['bibcode']) for p in info['published']))
     
     for entry in info['unpublished']:
         entry['authors'], entry['short_authors'] = clean_authors(entry)
+        entry['abstract'] = clean_abstract(entry)
 
     for pub in info['published']:
         for n_unpub, unpub in enumerate(info['unpublished']):
@@ -238,8 +252,8 @@ if __name__ == '__main__':
 
     for paper in info['published']:
         paper['url'] = 'http://{}/publication/{}'.format(info['info']['site'].strip('/'), paper['filename'])
-        paper['filename'] = '_publications/{}.md'.format(paper['filename'])
 
+    info['published'].sort(key=lambda x: x['date'], reverse=True)
     print('parsing cv...')
     new_latex_cv = parse(latex_cv_template, info, 'latex')
     new_markdown_cv = parse(markdown_cv_template, info, 'md')
@@ -253,10 +267,11 @@ if __name__ == '__main__':
 
     print('updating publication list... ')
     for paper in info['published']:
-        if (not os.path.exists(paper['filename'])) or args.overwrite:
+        path = os.path.join('_publications', paper['filename']+'.md')
+        if (not os.path.exists(path)) or args.overwrite:
             print('writing new paper:  {}'.format(paper['title']))
             page = parse(markdown_paper_page_template, paper, 'md')
-            with open(paper['filename'], 'w') as f:
+            with open(path, 'w') as f:
                 f.write(page)
         else:
             print('not overwriting existing paper: {}'.format(paper['title']))

@@ -6,7 +6,7 @@ summary: |
   next generation of surveys.
 
 unpublished: 
-  - title: The Performance of Photometric Reverberation Mapping at High Redshift and the Reliability of Damped Random Walk Models
+  - title: The performance of photometric reverberation mapping at high redshift and the reliability of damped random walk models
     pub: 'accepted by Monthly Notices of the Royal Astronomical Society'
     date: "2019-12-06"
     authors: ['Read, S.C.', 'Smith, D.J.B.', 'Jarvis, M.J.', 'Gürkan, G.']
@@ -20,7 +20,7 @@ unpublished:
       Furthermore, we use our suite of simulated light curves to deconvolve aliases and artefacts from our QSO's posterior probability distribution, increasing the signal-to-noise on the lag by a factor of ∼2.2. 
       We exceed the signal-to-noise of the Sloan Digital Sky Survey Reverberation Mapping Project (SDSS-RM) campaign with a quarter of the observing time per object, resulting in a ∼200 per cent increase in SNR efficiency over SDSS-RM. 
 
-  - title: On the Causes of the Mass Dependency of the Star-formation Rate -- Radio Luminosity Relation with LOFAR, Horizon-AGN, and CANDID
+  - title: On the causes of the mass dependency of the star-formation rate -- radio luminosity relation with LOFAR, Horizon-AGN, and CANDID
     pub: in prep.
     authors: ['Read, S.C.', 'Smith, D.J.B.', 'Gürkan, G.', 'Hardcastle, M.J.', 'et al.']
     year: 2019
@@ -30,12 +30,12 @@ unpublished:
     authors: ['Horton, M.', 'Hardcastle, M.J.', 'Read, S.C.', 'Krause, M.']
     year: 2019
 
-  - title: Bias and Accretion Rate Dependency in the Reverberation-Mapped Lag-luminosity Relation
+  - title: Bias and accretion rate dependency in the reverberation-mapped lag-luminosity relation
     pub: in prep.
     authors: ['Read, S.C.', 'Smith, D.J.B.', 'et al.']
     year: 2019
 
-  - title: Low Mass Stars and Multiple Systems in Gaia
+  - title: Low mass stars and multiple systems in Gaia
     pub: in prep.
     authors: ['González-Egea, E.', 'Pinfield, D.', 'Read, S.C.', 'et al.']
     year: 2019

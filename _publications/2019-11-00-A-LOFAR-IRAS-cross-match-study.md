@@ -1,10 +1,10 @@
 ---
 title: "A LOFAR-IRAS cross-match study: the far-infrared radio correlation and the 150 MHz luminosity as a star-formation rate tracer"
 collection: publications
-permalink: /publication/\_publications/2019-11-00-A-LOFAR-IRAS-cross-match-study.md
+permalink: /publication/2019-11-00-A-LOFAR-IRAS-cross-match-study
 date: 2019-11-01
 venue: 'Astronomy and Astrophysics'
-arxiv: 
+arxiv: 1909.04489
 doi: 10.1051/0004-6361/201935913
 ---
  Wang, L.; Gao, F.; Duncan, K.J.; Williams, W.L.; Rowan-Robinson, M.;
