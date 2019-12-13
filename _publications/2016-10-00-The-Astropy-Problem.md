@@ -1,7 +1,7 @@
 ---
 title: "The Astropy Problem"
 collection: publications
-permalink: /publication/2016-10-00-The-Astropy-Problem
+permalink: /publication/\_publications/2016-10-00-The-Astropy-Problem.md
 date: 2016-10-01
 venue: 'arXiv e-prints'
 arxiv: 1610.03159

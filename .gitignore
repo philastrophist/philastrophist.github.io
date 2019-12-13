@@ -2,6 +2,7 @@ _site/
 
 Gemfile.lock
 *.sublime-*
+__pycache__/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

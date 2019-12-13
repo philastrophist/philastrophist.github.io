@@ -1,7 +1,7 @@
 ---
 title: "A LOFAR-IRAS cross-match study: the far-infrared radio correlation and the 150 MHz luminosity as a star-formation rate tracer"
 collection: publications
-permalink: /publication/2019-11-00-A-LOFAR-IRAS-cross-match-study
+permalink: /publication/\_publications/2019-11-00-A-LOFAR-IRAS-cross-match-study.md
 date: 2019-11-01
 venue: 'Astronomy and Astrophysics'
 arxiv: 

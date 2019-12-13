@@ -98,21 +98,44 @@ def clean_single_author(author):
     first = '.'.join([i[0].strip('.') for i in first.split()])
     return '{}, {}.'.format(last, first).replace('*', '')
 
-def clean_authors(paper, start='**', end='**'):
+def clean_authors(paper, start='**', end='**', limit=29):
+    """
+    Show up to 29 authors. 
+    If there are more than 29, truncate like so:
+        If there are more than 14 after me, replace with ellipsis
+        If there are still more than 29:
+            If there are more than 14 before me, replace all but first 3 with ellipsis
+    """
     try:
         authors = paper.author
     except AttributeError:
         authors = paper['authors']
     authors = map(clean_single_author, authors)
-    return '; '.join(['{}{}{}'.format(start, i, end) if 'Read, S' in i else i for i in authors])
+    authors = ['{}{}{}'.format(start, i, end) if 'Read, S' in i else i for i in authors]
+    short_authors = [a for a in authors]
+    me = [i for i, a in enumerate(authors) if '*' in a][0]
+    too_many = len(short_authors) - limit
+    if too_many > 0:
+        if too_many <= len(authors[me+1:]):
+            short_authors = short_authors[:-too_many] + ['...']
+        else:
+            short_authors = short_authors[:me+1] + ['...']
+            too_many = len(short_authors) - 1 - limit
+            if too_many > 0:
+                if too_many > me - 3:
+                    delete = me - 3
+                else:
+                    delete = me - too_many
+                short_authors = short_authors[:delete] + ['...'] + short_authors[me:]
+    return '; '.join(authors), '; '.join(short_authors)
 
 def paper_similarity(paper1, paper2):
     try:
-        authorid1 = '; '.join(sorted(clean_authors(paper1).split('; '), key=lambda x: x[0])).lower()
+        authorid1 = '; '.join(sorted(clean_authors(paper1)[0].split('; '), key=lambda x: x[0])).lower()
     except ValueError:
         authorid1 = paper1['authors']
     try:
-        authorid2 = '; '.join(sorted(clean_authors(paper2).split('; '), key=lambda x: x[0])).lower()
+        authorid2 = '; '.join(sorted(clean_authors(paper2)[0].split('; '), key=lambda x: x[0])).lower()
     except ValueError:
         authorid2 = paper2['authors']
     try:
@@ -169,7 +192,7 @@ if __name__ == '__main__':
             pubprint = 'arxiv' not in paper.bibcode.lower()
             if only_preprint or pubprint:
                 d = {f: getattr(paper, f) for f in fields}
-                d['authors'] = clean_authors(paper)
+                d['authors'], d['short_authors'] = clean_authors(paper)
                 d['title'], d['filename'] = clean_title(paper)
                 d['date'] = clean_date(paper)
                 d['arxiv'] = arxiv_id(paper)
@@ -178,7 +201,7 @@ if __name__ == '__main__':
     print('\n'.join('{}, {}'.format(p['title'], p['bibcode']) for p in info['published']))
     
     for entry in info['unpublished']:
-        entry['authors'] = clean_authors(entry)
+        entry['authors'], entry['short_authors'] = clean_authors(entry)
 
     for pub in info['published']:
         for n_unpub, unpub in enumerate(info['unpublished']):
@@ -213,6 +236,10 @@ if __name__ == '__main__':
             info['published'] = [unpub] + info['published']
             del info['unpublished'][n_unpub]
 
+    for paper in info['published']:
+        paper['url'] = 'http://{}/publication/{}'.format(info['info']['site'].strip('/'), paper['filename'])
+        paper['filename'] = '_publications/{}.md'.format(paper['filename'])
+
     print('parsing cv...')
     new_latex_cv = parse(latex_cv_template, info, 'latex')
     new_markdown_cv = parse(markdown_cv_template, info, 'md')
@@ -226,11 +253,10 @@ if __name__ == '__main__':
 
     print('updating publication list... ')
     for paper in info['published']:
-        fname = '_publications/{}.md'.format(paper['filename'])
-        if (not os.path.exists(fname)) or args.overwrite:
+        if (not os.path.exists(paper['filename'])) or args.overwrite:
             print('writing new paper:  {}'.format(paper['title']))
             page = parse(markdown_paper_page_template, paper, 'md')
-            with open(fname, 'w') as f:
+            with open(paper['filename'], 'w') as f:
                 f.write(page)
         else:
             print('not overwriting existing paper: {}'.format(paper['title']))

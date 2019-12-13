@@ -1,7 +1,7 @@
 ---
 title: "Galaxy morphological classification in deep-wide surveys via unsupervised machine learning"
 collection: publications
-permalink: /publication/2020-01-00-Galaxy-morphological-classification-in-deep-wide-surveys-via-unsupervised-machine-learning
+permalink: /publication/\_publications/2020-01-00-Galaxy-morphological-classification-in-deep-wide-surveys-via-unsupervised-machine-learning.md
 date: 2020-01-01
 venue: 'Monthly Notices of the Royal Astronomical Society'
 arxiv: 
