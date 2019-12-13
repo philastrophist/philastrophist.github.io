@@ -9,6 +9,7 @@ import os
 from collections import namedtuple
 import jellyfish
 from datetime import datetime
+import arxiv
 
 
 class Parser:
@@ -161,6 +162,21 @@ def paper_similarity(paper1, paper2):
     return jellyfish.jaro_distance(authorid1, authorid2) * jellyfish.jaro_distance(titleid1, titleid2)
 
 
+def find_acceptance(x):
+    for i in re.split(r'\.|\d', x):
+        m = re.search(r'accepted (by|for publication in|in)(.+)', i, flags=re.IGNORECASE)
+        if m is not None:
+             return m.string
+
+
+def query_arxiv_publication(arxivid):
+    try:
+        comment = arxiv.query(id_list=[arxivid])[0]['arxiv_comment']
+        accept = find_acceptance(comment)
+    except (IndexError, KeyError, ValueError, TypeError):
+        accept = None    
+    return accept
+
 
 if __name__ == '__main__':
     from argparse import ArgumentParser
@@ -200,7 +216,8 @@ if __name__ == '__main__':
     for paper in papers:
         if 'Cat' not in paper.bibcode:
             similarities = [p for p in papers if paper_similarity(paper, p) > 0.8]
-            only_preprint = 'arxiv' in paper.bibcode.lower() and len(similarities) == 1
+            is_preprint = 'arxiv' in paper.bibcode.lower()
+            only_preprint = is_preprint and len(similarities) == 1
             pubprint = 'arxiv' not in paper.bibcode.lower()
             if only_preprint or pubprint:
                 d = {f: getattr(paper, f) for f in fields}
@@ -210,8 +227,6 @@ if __name__ == '__main__':
                 d['arxiv'] = arxiv_id(paper, *similarities)
                 d['abstract'] = clean_abstract(paper)
                 info['published'].append(d)
-    print(len(info['published']), 'published papers found on ADS')
-    print('\n'.join('{}, {}'.format(p['title'], p['bibcode']) for p in info['published']))
     
     for entry in info['unpublished']:
         entry['authors'], entry['short_authors'] = clean_authors(entry)
@@ -252,8 +267,12 @@ if __name__ == '__main__':
 
     for paper in info['published']:
         paper['url'] = 'http://{}/publication/{}'.format(info['info']['site'].strip('/'), paper['filename'])
+        if 'arxiv' in paper['pub'].lower():
+            paper['pub'] = query_arxiv_publication(paper['arxiv']) or paper['pub']
 
     info['published'].sort(key=lambda x: x['date'], reverse=True)
+    print(len(info['published']), 'published papers found')
+    print('\n'.join('{}, {}, {}'.format(p['title'], p['bibcode'], p['pub']) for p in info['published']))
     print('parsing cv...')
     new_latex_cv = parse(latex_cv_template, info, 'latex')
     new_markdown_cv = parse(markdown_cv_template, info, 'md')

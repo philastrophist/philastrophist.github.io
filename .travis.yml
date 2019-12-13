@@ -28,7 +28,7 @@ deploy:
 before_script:
   - sudo apt-get update
   - sudo apt-get install poppler-utils
-  - pip install jellyfish
+  - pip install jellyfish arxiv
 script:
   - sudo apt-get install git-flow
   - git config core.fileMode false
