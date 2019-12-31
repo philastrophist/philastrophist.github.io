@@ -12,7 +12,7 @@ redirect_from:
 Download cv [here](/cv.pdf)
 
 ## Summary
- I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid .
+ I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid.
 My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
 I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, and H-ATLAS surveys and the Horizon-AGN simulations. 
 My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
@@ -21,6 +21,8 @@ next generation of surveys.
 
 
  *Fellow of the Royal Astronomical Society, FRAS*
+
+ *Member of the European Astronomical Society, EAS*
 
 
 
