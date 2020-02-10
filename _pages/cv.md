@@ -122,8 +122,6 @@ Passed viva w/ minor corrections
 ## Submitted and in preparation
 * *On the causes of the mass dependency of the star-formation rate -- radio
 luminosity relation with LOFAR, Horizon-AGN, and CANDID*, **Read, S.**; Smith, D.; Gürkan, G.; Hardcastle, M.; et al. - in prep.
-* *A Markov Chain Monte Carlo approach for measurement of jet precession in
-radio-loud active galactic nuclei*, Horton, M.; Hardcastle, M.; **Read, S.**; Krause, M. - submitted to MNRAS
 * *Bias and accretion rate dependency in the reverberation-mapped
 lag-luminosity relation*, **Read, S.**; Smith, D.; et al. - in prep.
 * *Low mass stars and multiple systems in Gaia*, González-Egea, E.; Pinfield, D.; **Read, S.**; et al. - in prep.
