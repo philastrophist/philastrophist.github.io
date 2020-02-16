@@ -3,9 +3,9 @@ title: "A Markov Chain Monte Carlo approach for measurement of jet precession in
 collection: publications
 permalink: /publication/2020-02-00-A-Markov-Chain-Monte-Carlo-approach-for-measurement-of-jet-precession-in-radio-loud-active-galactic-nuclei
 date: 2020-02-01
-venue: 'arXiv e-prints'
+venue: 'Monthly Notices of the Royal Astronomical Society'
 arxiv: 2002.04966
-doi: None
+doi: 10.1093/mnras/staa429
 ---
  Horton, M.A.; Hardcastle, M.J.; **Read, S.C.**; Krause, M.G.H.
 

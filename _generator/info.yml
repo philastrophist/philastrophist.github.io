@@ -68,7 +68,7 @@ education:
     end: 2014
     notes: 2:1 with Honours
 
-affiliations: [['Fellow of the Royal Astronomical Society', 'FRAS'], ['Member of the European Astronomical Society', 'EAS']]
+affiliations: [['Fellow of the Royal Astronomical Society', 'FRAS'], ['Member of the European Astronomical Society', 'EAS'], ['Member of the Euclid Consortium', 'EC']]
 
 experience:
   - name: Postdoc

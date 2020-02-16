@@ -24,6 +24,8 @@ next generation of surveys.
 
  *Member of the European Astronomical Society, EAS*
 
+ *Member of the Euclid Consortium, EC*
+
 
 
 ## Research Interests
