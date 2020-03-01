@@ -26,8 +26,8 @@ given our target's observed signal-to-noise of \>20 and average cadence
 of 14 d (even when DRW is not applicable). Furthermore, we use our suite
 of simulated light curves to deconvolve aliases and artefacts from our
 QSO's posterior probability distribution, increasing the signal-to-noise
-on the lag by a factor of ̃2.2. We exceed the signal-to-noise of the
+on the lag by a factor of ∼2.2. We exceed the signal-to-noise of the
 Sloan Digital Sky Survey Reverberation Mapping Project (SDSS-RM)
 campaign with a quarter of the observing time per object, resulting in a
-̃200 per cent increase in signal-to-noise efficiency over SDSS-RM.
+∼200 per cent increase in signal-to-noise efficiency over SDSS-RM.
 
