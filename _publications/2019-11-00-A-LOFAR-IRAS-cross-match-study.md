@@ -13,7 +13,7 @@ K.T.; Farrah, D.; Gürkan, G.; Hardcastle, M.J.; McCheyne, I.; Prandoni,
 I.; **Read, S.C.**; Röttgering, H.J.A.; Smith, D.J.B.
 
  <BR /> Aims: We aim to study the far-infrared radio correlation (FIRC)
-at 150 MHz in the local Universe (at a median redshift ⟨z⟩̃0.05) and
+at 150 MHz in the local Universe (at a median redshift ⟨z⟩∼0.05) and
 improve the use of the rest-frame 150 MHz luminosity, L<SUB>150</SUB>,
 as a star-formation rate (SFR) tracer, which is unaffected by dust
 extinction. <BR /> Methods: We cross-match the 60 μm selected Revised
