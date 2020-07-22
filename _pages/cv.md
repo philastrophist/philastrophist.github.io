@@ -12,7 +12,7 @@ redirect_from:
 Download cv [here](/cv.pdf)
 
 ## Summary
- I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid.
+ I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working in WEAVE-LOFAR
 My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
 I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, HST, WISE, and H-ATLAS surveys as well as the Horizon-AGN simulations. 
 My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
@@ -37,10 +37,18 @@ biases.
 
 ## Experience
 **Postdoc**  
-*Osservatorio Astronomico di Roma - INAF*, Oct 2019 - Present  
+*University of Nottingham*, Jul 2020 - Present  
+WEAVE-LOFAR QAG & galaxy evolution  
+  
+-   Plan and conduct independent research using the WEAVE data
+-   Develop WEAVE MOS spectroscopic analysis software
+-   Leading the Quality Assurance Group (QAG) of WEAVE-LOFAR data
+
+**Postdoc**  
+*Osservatorio Astronomico di Roma - INAF*, Oct 2019 - Jun 2020  
 Galaxy shape measures in Euclid  
   
--   Quanitfying the colour-gradient bias in Euclid weak-lensing
+-   Quantifying the colour-gradient bias in Euclid weak-lensing
     measurements
 -   Generation of realistic galaxy catalogues
 -   Hubble image reduction
@@ -83,15 +91,6 @@ Holes in the Era of Surveys
 -   Projects included PNe imaging and constructing open cluster
     HR-diagrams.
 
-**Insight Analyst**  
-*Linkdex, UK*, Jul 2014 - Jul 2015  
-Processing big data from raw consumer search patterns to an explanative
-format suitable for client business strategies.  
-  
--   Big data processing with Python & sci-kit learn
--   Communication with the backend team
--   API design, visualisation, and automation development.
-
 **Summer Student**  
 *National Physical Laboratory, UK*, Jun 2013 - Aug 2013  
 Supervisor: Dr Alastair Sinclair  
@@ -101,6 +100,15 @@ Supervisor: Dr Alastair Sinclair
     group.
 -   Developed analytical Matlab code and the optical bench setup
     required.
+
+**Insight Analyst**  
+*Linkdex, UK*, Jul 2014 - Jul 2015  
+Processing big data from raw consumer search patterns to an explanative
+format suitable for client business strategies.  
+  
+-   Big data processing with Python & sci-kit learn
+-   Communication with the backend team
+-   API design, visualisation, and automation development.
 
 
 

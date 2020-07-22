@@ -1,9 +1,9 @@
 summary: |
-  I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working on the weak-lensing colour-gradient bias with Euclid.
-  My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
-  I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, HST, WISE, and H-ATLAS surveys as well as the Horizon-AGN simulations. 
-  My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
-  next generation of surveys.
+    I am a postdoctoral researcher specialising in Bayesian statistical analysis on big data, working in WEAVE-LOFAR
+    My main interests are reverberation mapping and the interface between star-forming galaxies and AGN. 
+    I have worked with a diverse range of data including the latest releases from the LOFAR, SDSS, HST, WISE, and H-ATLAS surveys as well as the Horizon-AGN simulations. 
+    My latest work combines the use of novel statistical Bayesian analysis with these large datasets in order to facilitate effective exploitation of the 
+    next generation of surveys.
 
 unpublished: 
   - title: On the causes of the mass dependency of the star-formation rate -- radio luminosity relation with LOFAR, Horizon-AGN, and CANDID
@@ -72,13 +72,24 @@ affiliations: [['Fellow of the Royal Astronomical Society', 'FRAS'], ['Member of
 
 experience:
   - name: Postdoc
-    start: Oct 2019
+    start: Jul 2020
     end: Present
+    info: WEAVE-LOFAR QAG & galaxy evolution
+    location: University of Nottingham
+    output: ""
+    bullets: [
+          '* Plan and conduct independent research using the WEAVE data',
+          '* Develop WEAVE MOS spectroscopic analysis software',
+          '* Leading the Quality Assurance Group (QAG) of WEAVE-LOFAR data'
+    ]
+  - name: Postdoc
+    start: Oct 2019
+    end: Jun 2020
     info: Galaxy shape measures in Euclid
     location: "Osservatorio Astronomico di Roma - INAF"
     output: ""
     bullets: [
-        '* Quanitfying the colour-gradient bias in Euclid weak-lensing measurements',
+        '* Quantifying the colour-gradient bias in Euclid weak-lensing measurements',
         '* Generation of realistic galaxy catalogues',
         '* Hubble image reduction',
    ]
@@ -122,17 +133,6 @@ experience:
         "* Instructed in the use of 16-inch telescopes and the reduction of data.",
         "* Projects included PNe imaging and constructing open cluster HR-diagrams."
     ]
-  - name: "Insight Analyst"
-    start: Jul 2014
-    end: Jul 2015
-    output: ""
-    location: Linkdex, UK
-    info: "Processing big data from raw consumer search patterns to an explanative format suitable for client business strategies."
-    bullets: [
-      "* Big data processing with Python & sci-kit learn",
-      "* Communication with the backend team ",
-      "* API design, visualisation, and automation development."
-    ]
 
 other_experience:
     - name: "Summer Student"
@@ -145,6 +145,18 @@ other_experience:
           "* Worked with the Time & Frequency Team.",
           "* Analysed Gaussian beam quality for the strontium ion optical clock group.",
           "* Developed analytical Matlab code and the optical bench setup required."
+      ]
+      
+    - name: "Insight Analyst"
+      start: Jul 2014
+      end: Jul 2015
+      output: ""
+      location: Linkdex, UK
+      info: "Processing big data from raw consumer search patterns to an explanative format suitable for client business strategies."
+      bullets: [
+        "* Big data processing with Python & sci-kit learn",
+        "* Communication with the backend team ",
+        "* API design, visualisation, and automation development."
       ]
 
 presentations:
