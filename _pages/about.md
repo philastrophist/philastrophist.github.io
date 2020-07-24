@@ -9,7 +9,7 @@ redirect_from:
 ---
 {% include base_path %}
 
-I am a postdoctoral researcher at Il Osservatorio Astronomico di Roma, looking into the effect of the colour-gradient bias on the weak-lensing measurements that Euclid will provide.
+I am WEAVE-LOFAR postdoctoral researcher at Nottingham University.
 My interests lie in mainly in applying Bayesian analysis to big data. 
 Therefore, during my Ph.D. I got involved with the latest data from [LOFAR](http://www.lofar.org/), [Herschel-ATLAS](https://www.h-atlas.org/), and [SDSS](https://www.sdss.org/).
 
