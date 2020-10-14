@@ -49,5 +49,4 @@ for creating and supporting what is now critical software. This paper
 explores the problem in detail, outlines possible solutions to correct
 this, and presents a few suggestions on how to address the
 sustainability of general purpose astronomical software.
-<P />
 
