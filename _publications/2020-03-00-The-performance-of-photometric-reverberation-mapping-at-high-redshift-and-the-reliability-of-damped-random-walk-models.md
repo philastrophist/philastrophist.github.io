@@ -18,7 +18,7 @@ methods frequently assume a damped random walk (DRW) model, which may
 not be universally applicable. We perform photometric reverberation
 mapping using the JAVELIN photometric DRW model for the QSO
 SDSS-J144645.44+625304.0 at z = 0.351 and estimate the Hβ lag of
-65\^{+6}*{-1} d and black hole mass of 10^{8.22^{+0.13}*{-0.15}} M\_{☉
+65\^{+6}*{-1} d and black hole mass of 10^{8.22^{+0.13}*{-0.15}} M\_{⊙
 }. An analysis of the reliability of photometric reverberation mapping,
 conducted using many thousands of simulated CARMA process light curves,
 shows that we can recover the input lag to within 6 per cent on average
